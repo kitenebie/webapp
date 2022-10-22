@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: "JelleeRoman";
-    src: url("fonts/Jellee-Roman.otf");
+    src: url("Jellee-Roman.otf");
 }
 @font-face {
     font-family: "grapes";
-    src: url("fonts/FontsBombIlovegrapes.ttf");
+    src: url("FontsBombIlovegrapes.ttf");
 }
 *{
     margin: 0;
@@ -16,7 +16,7 @@ body{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.397);
-    background-image: url("assets/css/images/2240456-background-for-chicken-recipes-food-meat-vegetable-photocase-stock-photo-large.jpeg");
+    background-image: url("cover.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

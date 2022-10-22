@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: "JelleeRoman";
-  src: url("fonts/Jellee-Roman.otf");
+  src: url("Jellee-Roman.otf");
 }
 @font-face {
   font-family: "grapes";
-  src: url("fonts/FontsBombIlovegrapes.ttf");
+  src: url("FontsBombIlovegrapes.ttf");
 }
 *{
   margin: 0;
