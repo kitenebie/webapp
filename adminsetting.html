@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusina's Recipe | Administrator</title>
+    <link rel="stylesheet" href="adminmobile.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="nav-branding" id="brandLogo">Kusina's Recipes</a>
+            <ul class="nav-menu" id="navmenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><b>ADD NEW RECIPE</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><b>RECIPES LIST</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><b>ADMIN SETTINGS</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><b>LOG OUT</b></a>
+                </li>
+            </ul>
+            <div class="hamburger" id="btnHambrg">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <form action="" method="post">
+        <div class="container">
+            <h2 class="title">ADMINISTRATOR PROFILES</h2><br>
+            <input type="text" name="recipe_id" id="recipe_id" placeholder="RECIPE ID">
+            <input type="file" name="recipe_image" id="recipe_image">
+            <input type="text" name="recipe_link" id="recipe_link" placeholder="VIDEO LINK 'https//'">
+            <input type="text" name="recipe_name" id="recipe_name" placeholder="RECIPE NAME">
+            <select name="category" id="category">
+                <option value="port" >PORK RECIPES</option>
+                <option value="fish" >FISH RECIPES</option>
+                <option value="checken" >CHECKEN RECIPES</option>
+                <option value="vegetable" >VEGETABLES RECIPES</option>
+                <option value="dessert" >DESSERT</option>
+            </select>
+            <div class="ingr">
+            <label for="Ingredients">INGREDIENTS</label>
+            <textarea name="Ingredients" id="Ingredients" cols="100%" rows="15"></textarea>
+            <label for="procedure">PROCEDURE</label>
+            <textarea name="Ingredients" id="procedure" cols="auto" rows="15"></textarea>
+            </div>
+            <button type="submit">UPDATE RECIPE</button>
+        </div>
+    </form>
+
+     <!-- script for menu  -->
+     <script>
+        const hamburger = document.getElementById("btnHambrg");
+        const navmenu = document.getElementById("navmenu");
+        const searchbox = document.getElementById("searchbox");
+        const brandLogo = document.getElementById("brandLogo");
+        
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navmenu.classList.toggle("active");
+            searchbox.classList.toggle("active");
+            brandLogo.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

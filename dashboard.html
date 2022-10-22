@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusina's Recipe's | Dashboard</title>
+    <link rel="stylesheet" href="dashboardmobile.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="nav-branding" id="brandLogo">Kusina's Recipes</a>
+            <ul class="nav-menu" id="navmenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">PORK RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FISH RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CHECKEN RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">VEGETABLES RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">DESSERT</a>
+                </li>
+                <br>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><b>LOG OUT</b></a>
+                </li>
+            </ul>
+            <div class="search-box" id="searchbox">
+                <input type="search" name="search"  class="search" id="search" placeholder="Search Recipes">
+                <button class="searchbtn" type="submit">Search</button>
+            </div>
+            <div class="hamburger" id="btnHambrg">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+           
+        </nav>
+    </header>
+    
+    
+   <div class="container-foods">
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <!-- +++++++++++++++++++++++++++++++++ -->
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+        <div class="food-box">
+            <img class="photo" src="cover.jpeg" alt="" srcset="">
+            <div class="content">
+                <h2 class="title">Food Title</h2>
+                <p class="catgry">Category:<span></span></p>
+            </div>
+        </div>
+
+        <!-- +++++++++++++++++++++++++++ -->
+   </div>
+<!-- hdddddddddddddddddddddddddddddddddddddddddd*-/- -->
+
+
+    <!-- script for menu  -->
+    <script>
+        const hamburger = document.getElementById("btnHambrg");
+        const navmenu = document.getElementById("navmenu");
+        const searchbox = document.getElementById("searchbox");
+        const brandLogo = document.getElementById("brandLogo");
+        
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navmenu.classList.toggle("active");
+            searchbox.classList.toggle("active");
+            brandLogo.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
